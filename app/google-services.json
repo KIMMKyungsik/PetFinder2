@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "260975191721",
+    "firebase_url": "https://petfinder-cfea7-default-rtdb.firebaseio.com",
+    "project_id": "petfinder-cfea7",
+    "storage_bucket": "petfinder-cfea7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260975191721:android:9185135baeb780b5596bb8",
+        "android_client_info": {
+          "package_name": "org.techtown.petfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260975191721-rqfl3l0mqj71p61be7f96s89dpda7r8q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.techtown.petfinder",
+            "certificate_hash": "8a2a197d4b2c605ed97c406d94fb7d9513d55ebe"
+          }
+        },
+        {
+          "client_id": "260975191721-ckmsr72b72mornq9p3a6ehku14ldr0g0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlv8XtKPA7Z6AT04r-J90Sw_pmRqUsncQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260975191721-ckmsr72b72mornq9p3a6ehku14ldr0g0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
