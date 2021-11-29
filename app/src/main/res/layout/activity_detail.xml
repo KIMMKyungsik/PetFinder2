@@ -21,50 +21,43 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="품종"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
+            android:text="품종" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="나이"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
+            android:text="나이" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="성별"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
+            android:text="성별" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="실종 날짜"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
+            android:text="실종 날짜"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="실종 위치"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
+            android:text="실종 위치"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="발견자 닉네임"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
+            android:text="발견자 닉네임" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="발견자 전화번호"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
+            android:text="발견자 전화번호" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/signUpButton"
