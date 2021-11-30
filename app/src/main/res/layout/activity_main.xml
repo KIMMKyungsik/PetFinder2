@@ -55,7 +55,6 @@
 
         <Button
             android:id="@+id/signInButton"
-            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
@@ -64,7 +63,6 @@
 
         <Button
             android:id="@+id/signUpButton"
-            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="58dp"

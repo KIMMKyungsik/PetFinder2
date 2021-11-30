@@ -29,6 +29,11 @@ class MainActivity : BaseActivity() {
 
         }
 
+        binding.signInButton.setOnClickListener {
+            val intent = Intent(this, ReviewActivity::class.java)
+            startActivity(intent)
+
+        }
 
     }
 
