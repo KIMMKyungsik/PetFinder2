@@ -15,6 +15,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
         <activity
+            android:name=".BottomNavMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FindPetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LostPetActivity"
+            android:exported="false" />
+        <activity
             android:name=".ReviewActivity"
             android:exported="false" />
         <activity
