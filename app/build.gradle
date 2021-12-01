@@ -50,4 +50,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth-ktx'
     implementation 'com.google.firebase:firebase-firestore'
     implementation 'com.google.firebase:firebase-storage'
+    implementation 'com.firebaseui:firebase-ui-storage:8.0.0'
+
+    implementation 'com.tbuonomo:dotsindicator:4.2'
 }
