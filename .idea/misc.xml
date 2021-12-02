@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/LG/Downloads/PetFinder/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.37916666666666665" />
+        <entry key="..\:/Users/LG/Downloads/PetFinder/app/src/main/res/drawable/ic_baseline_add_64.xml" value="0.37916666666666665" />
         <entry key="..\:/Users/LG/Downloads/PetFinder/app/src/main/res/drawable/ic_baseline_filter_1_24.xml" value="0.37916666666666665" />
         <entry key="..\:/Users/LG/Downloads/PetFinder/app/src/main/res/drawable/ic_baseline_filter_2_24.xml" value="0.21944444444444444" />
         <entry key="..\:/Users/LG/Downloads/PetFinder/app/src/main/res/drawable/ic_baseline_filter_3_24.xml" value="0.37916666666666665" />
@@ -18,6 +19,7 @@
         <entry key="..\:/Users/LG/Downloads/PetFinder/app/src/main/res/layout/activity_sign_in.xml" value="0.3484375" />
         <entry key="..\:/Users/LG/Downloads/PetFinder/app/src/main/res/layout/activity_sign_up.xml" value="0.35833333333333334" />
         <entry key="..\:/Users/LG/Downloads/PetFinder/app/src/main/res/layout/find_pet_fragment.xml" value="0.35833333333333334" />
+        <entry key="..\:/Users/LG/Downloads/PetFinder/app/src/main/res/layout/item_spinner_small.xml" value="0.36302083333333335" />
         <entry key="..\:/Users/LG/Downloads/PetFinder/app/src/main/res/layout/lost_pet_fragment.xml" value="0.36302083333333335" />
         <entry key="..\:/Users/LG/Downloads/PetFinder/app/src/main/res/layout/review_list_item.xml" value="0.35833333333333334" />
         <entry key="..\:/Users/LG/Downloads/PetFinder/app/src/main/res/menu/nav_menu.xml" value="0.1" />
