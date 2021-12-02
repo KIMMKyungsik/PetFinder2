@@ -51,6 +51,7 @@ class SignInActivity : BaseActivity() {
 
         if (email.isBlank()) {
             binding.emailTextInput.error = "이메일 주소를 입력해 주세요."
+            return
 
         } else {
             binding.emailTextInput.error = null
@@ -59,6 +60,7 @@ class SignInActivity : BaseActivity() {
 
         if (password.isBlank()) {
             binding.passwordTextInput.error = "패스워드를 입력해 주세요."
+            return
 
         } else {
             binding.passwordTextInput.error = null
