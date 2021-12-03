@@ -4,6 +4,8 @@
     package="org.techtown.petfinder">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -29,12 +31,8 @@
         <activity
             android:name=".BottomNavMainActivity"
             android:exported="false" />
-        <activity
-            android:name=".ReviewActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"></activity>
+
+        <activity android:name=".MainActivity"/>
         <activity android:name=".SignUpActivity" />
     </application>
 

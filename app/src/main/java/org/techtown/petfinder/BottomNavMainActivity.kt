@@ -7,6 +7,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.google.firebase.auth.FirebaseAuth
 import org.techtown.fragments.FindPetFragment
 import org.techtown.fragments.LostPetFragment
 import org.techtown.petfinder.databinding.ActivityBottomNavMainBinding
@@ -74,6 +75,11 @@ class BottomNavMainActivity : BaseActivity() {
                 return LostPetFragment()
             }
         }
+    }
+
+    override fun onBackPressed() {
+        FirebaseAuth.getInstance().signOut()
+        super.onBackPressed()
     }
     override fun setupEvents() {
     }

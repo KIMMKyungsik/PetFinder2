@@ -1,8 +1,10 @@
 package org.techtown.petfinder
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import org.techtown.extensions.restartApplication
 import org.techtown.petfinder.databinding.ActivitySignUpBinding
 
 class SignUpActivity : BaseActivity() {
@@ -37,12 +39,15 @@ class SignUpActivity : BaseActivity() {
                 if (task.isSuccessful) {
                     Toast.makeText(this, "계정 생성 완료.", Toast.LENGTH_SHORT).show()
                     finish() // 가입창 종료
+                    restartApplication()
                 } else {
                     Toast.makeText(this, "계정 생성 실패", Toast.LENGTH_SHORT).show()
                 }
             }
         }
     }
+
+
 
     override fun setValues() {
     }

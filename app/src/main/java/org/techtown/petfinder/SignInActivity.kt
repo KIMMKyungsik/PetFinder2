@@ -19,7 +19,7 @@ class SignInActivity : BaseActivity() {
         auth = FirebaseAuth.getInstance()
 
         if (auth.currentUser != null) {
-            val intent = Intent(this, MainActivity::class.java).apply {
+            val intent = Intent(this, BottomNavMainActivity::class.java).apply {
                 flags = flags or Intent.FLAG_ACTIVITY_NO_ANIMATION
             }
             startActivity(intent)
@@ -73,7 +73,7 @@ class SignInActivity : BaseActivity() {
                 // 계정이 없거나, 패스워드가 틀림
 
             } ?: run {
-                val intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, BottomNavMainActivity::class.java)
                 startActivity(intent)
             }
         }

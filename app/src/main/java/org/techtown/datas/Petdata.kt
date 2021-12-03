@@ -28,6 +28,7 @@ data class Petdata(
 
 
     val activation: Boolean = true,
+//    
 
     @ServerTimestamp val timestamp: Date? = null
 )
