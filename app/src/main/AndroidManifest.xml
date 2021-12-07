@@ -17,6 +17,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
         <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".ReportActivity"
             android:exported="false" />
         <activity
@@ -32,7 +35,6 @@
             android:name=".BottomNavMainActivity"
             android:exported="false" />
 
-        <activity android:name=".MainActivity"/>
         <activity android:name=".SignUpActivity" />
     </application>
 

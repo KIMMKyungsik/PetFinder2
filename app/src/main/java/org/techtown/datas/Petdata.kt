@@ -22,13 +22,7 @@ data class Petdata(
     val area: String = "",
     val location: String = "",
     val content: String = "",
-
-
     val type: Int = 0,
-
-
     val activation: Boolean = true,
-//    
-
     @ServerTimestamp val timestamp: Date? = null
 )
