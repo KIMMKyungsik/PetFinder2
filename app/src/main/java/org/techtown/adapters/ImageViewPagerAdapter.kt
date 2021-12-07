@@ -19,9 +19,9 @@ class ImageViewPagerAdapter : RecyclerView.Adapter<ImageViewPagerAdapter.ImageIt
         storage = FirebaseStorage.getInstance()
     }
 
-    constructor(dataSet: ArrayList<String>) {
+    constructor(dataSet: List<String>) {
         storage = FirebaseStorage.getInstance()
-        this.dataSet = dataSet
+        this.dataSet = ArrayList(dataSet)
     }
 
     fun setOnClickListener(listener: ((Int, ArrayList<String>) -> Unit)?) {

@@ -13,13 +13,13 @@
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
+            style="@style/Widget.MaterialComponents.Toolbar.Surface"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
-            app:navigationIcon="?attr/homeAsUpIndicator"
-            app:titleCentered="true"
-            app:titleTextAppearance="?attr/textAppearanceSubtitle1" />
+            app:navigationIcon="?attr/homeAsUpIndicator"/>
+
     </com.google.android.material.appbar.AppBarLayout>
+
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -174,6 +174,7 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:id="@+id/dateTitleTextView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -197,6 +198,7 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:id="@+id/locationTitleTextView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"

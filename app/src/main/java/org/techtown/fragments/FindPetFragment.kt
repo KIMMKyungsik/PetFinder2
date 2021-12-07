@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.google.firebase.firestore.*
 import org.techtown.adapters.PetListAdapter
 import org.techtown.datas.Petdata
+import org.techtown.petfinder.DetailActivity
 import org.techtown.petfinder.ReportActivity
 import org.techtown.petfinder.databinding.FindPetFragmentBinding
 
@@ -38,7 +39,14 @@ class FindPetFragment : Fragment(), EventListener<QuerySnapshot> {
         with(binding) {
             recyclerView.layoutManager = GridLayoutManager(context, 2)
 
-            adapter = PetListAdapter(root.context)
+            adapter = PetListAdapter(root.context).apply {
+                setOnClickListener {
+                    DetailActivity.startActivity(this@FindPetFragment, it)
+                }
+            }
+
+
+
             recyclerView.adapter = adapter
 
             regesterButton.setOnClickListener {

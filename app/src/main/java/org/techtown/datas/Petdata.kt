@@ -1,10 +1,13 @@
 package org.techtown.datas
 
+import android.os.Parcelable
 import com.google.firebase.firestore.DocumentId
 import com.google.firebase.firestore.ServerTimestamp
+import kotlinx.parcelize.Parcelize
 import java.util.*
 import kotlin.collections.ArrayList
 
+@Parcelize
 data class Petdata(
 
     @DocumentId val documentId: String = "",
@@ -25,4 +28,4 @@ data class Petdata(
     val type: Int = 0,
     val activation: Boolean = true,
     @ServerTimestamp val timestamp: Date? = null
-)
+): Parcelable

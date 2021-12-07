@@ -20,12 +20,17 @@ class PetListAdapter(context: Context) : ListAdapter<Petdata, PetListAdapter.Pet
 
     private val imageWidth: Int
     private val storage: FirebaseStorage
+    private var listener: ((Petdata) -> Unit)? = null
 
 
     init {
         val displayWidth = min(context.resources.displayMetrics.widthPixels, context.resources.displayMetrics.heightPixels)
         imageWidth = (displayWidth - (context.resources.getDimensionPixelSize(R.dimen.pet_list_item_spacing) * 3)) / 2
         storage = FirebaseStorage.getInstance()
+    }
+
+    public fun setOnClickListener(listener: ((Petdata) -> Unit)?) {
+        this.listener = listener
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PetListItemViewHolder {
@@ -58,6 +63,11 @@ class PetListAdapter(context: Context) : ListAdapter<Petdata, PetListAdapter.Pet
                 )
             }"
             locationTextView.text = "실종위치: ${item.location}"
+
+            clickContainer.setOnClickListener {
+                listener?.invoke(item)
+
+            }
         }
     }
 
