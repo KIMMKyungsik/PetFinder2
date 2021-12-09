@@ -64,6 +64,8 @@ dependencies {
 
     implementation 'com.karumi:dexter:6.0.2'
     implementation("com.louiscad.splitties:splitties-resources:3.0.0")
+    implementation 'com.github.chrisbanes:PhotoView:2.0.0'
+
 
 
 
