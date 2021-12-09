@@ -4,6 +4,7 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.text.format.DateUtils
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.firebase.auth.FirebaseAuth
@@ -56,6 +57,8 @@ class DetailActivity : AppCompatActivity(){
         storage = FirebaseStorage.getInstance()
 
         initUi()
+
+
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
@@ -65,24 +68,24 @@ class DetailActivity : AppCompatActivity(){
     }
     private fun initUi() {
 
-            binding.toolbar.setNavigationOnClickListener {
-                onBackPressed()
-            }
+        binding.toolbar.setNavigationOnClickListener {
+            onBackPressed()
+        }
 
-            if (data.type == 0) {
-                binding.dateTitleTextView.text = "실종일"
-                binding.locationTitleTextView.text = "실종위치"
-                binding.contactButton.text = "펫 주인에게 전화걸기"
+        if (data.type == 0) {
+            binding.dateTitleTextView.text = "실종일"
+            binding.locationTitleTextView.text = "실종위치"
+            binding.contactButton.text = "펫 주인에게 전화걸기"
 
-            } else {
-                binding.dateTitleTextView.text = "발견일"
-                binding.locationTitleTextView.text = "발견위치"
-                binding.contactButton.text = "발견자에게 전화걸기"
-            }
+        } else {
+            binding.dateTitleTextView.text = "발견일"
+            binding.locationTitleTextView.text = "발견위치"
+            binding.contactButton.text = "발견자에게 전화걸기"
+        }
 
         adapter = ImageViewPagerAdapter(data.pictures)
-        binding. viewPager.adapter = adapter
-        binding. dotsIndicator.setViewPager2(binding.viewPager)
+        binding.viewPager.adapter = adapter
+        binding.dotsIndicator.setViewPager2(binding.viewPager)
 
         binding.titleTextView.text = data.title
         binding.contentTextView.text = data.content
@@ -90,13 +93,25 @@ class DetailActivity : AppCompatActivity(){
         binding.ageTextView.text = data.age
         binding.sexTextView.text = data.sex
         binding.dateTextView.text = DateUtils.formatDateTime(
-                this@DetailActivity, data.date.time,
-                DateUtils.FORMAT_SHOW_YEAR or DateUtils.FORMAT_SHOW_DATE
-            )
+            this@DetailActivity, data.date.time,
+            DateUtils.FORMAT_SHOW_YEAR or DateUtils.FORMAT_SHOW_DATE
+        )
         binding.locationTextView.text = "${data.area} ${data.location}"
         binding.contactTextView.text = data.writerContact
 
 
+        binding.contactButton.setOnClickListener {
+
+            val intent = Intent(
+                Intent.ACTION_DIAL,
+                Uri.parse("tel:" + data.writerContact.replace("[- ]", "").trim())
+            )
+            startActivity(intent)
+
+
+        }
 
     }
+
+
 }

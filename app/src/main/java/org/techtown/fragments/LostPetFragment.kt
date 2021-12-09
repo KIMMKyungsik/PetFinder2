@@ -39,6 +39,8 @@ class LostPetFragment : Fragment(), EventListener<QuerySnapshot> {
         with(binding) {
             recyclerView.layoutManager = GridLayoutManager(context, 2)
 
+
+
             adapter = PetListAdapter(root.context).apply {
 
                 setOnClickListener {
