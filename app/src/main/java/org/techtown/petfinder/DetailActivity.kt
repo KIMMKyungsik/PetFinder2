@@ -83,7 +83,11 @@ class DetailActivity : AppCompatActivity(){
             binding.contactButton.text = "발견자에게 전화걸기"
         }
 
-        adapter = ImageViewPagerAdapter(data.pictures)
+        adapter = ImageViewPagerAdapter(data.pictures).apply {
+            setOnClickListener { position, arrayList ->
+                ImageClickActivity.startActivity(this@DetailActivity, arrayList, position)
+            }
+        }
         binding.viewPager.adapter = adapter
         binding.dotsIndicator.setViewPager2(binding.viewPager)
 
@@ -108,6 +112,12 @@ class DetailActivity : AppCompatActivity(){
             )
             startActivity(intent)
 
+
+        }
+
+        binding.viewPager.setOnClickListener {
+            var myIntent = Intent(this, ImageClickActivity::class.java)
+            startActivity(myIntent)
 
         }
 
